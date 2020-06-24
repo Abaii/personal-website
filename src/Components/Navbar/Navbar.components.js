@@ -1,27 +1,29 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const HeaderWrapper = styled.header`
-    display: flex;  
-    justify-content: space-between;
-    flex-grow: 1;
-    padding-top: 60px;
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+  padding: 30px;
+  color: #82a7a6;
+  flex-wrap: wrap;
 `;
 
 export const TitleWrapper = styled.div`
-    display: flex; 
-    flex-direction: space-between;
+  display: flex;
+  flex-direction: space-between;
+  align-self: center;
 `;
 
 export const Title = styled.h1`
-    font-size: 24px;
-    font-weight: bold;
-    margin-right: 16px;
-    flex-wrap: nowrap;
+  font-size: 24px;
+  margin-right: 16px;
+  flex-wrap: nowrap;
 `;
 
 export const Logo = styled.div`
-         /* clip-path: polygon(40% 0, 60% 0, 99% 100%, 75% 100%, 60% 80%, 40% 80%, 25% 100%, 0 100%);  logo is A */
-         /* clip-path: polygon(
+  /* clip-path: polygon(40% 0, 60% 0, 99% 100%, 75% 100%, 60% 80%, 40% 80%, 25% 100%, 0 100%);  logo is A */
+  /* clip-path: polygon(
            26% 55%,
            21% 31%,
            100% 13%,
@@ -35,7 +37,7 @@ export const Logo = styled.div`
            88% 78%,
            81% 32%
          ); this is an E */
-         /* clip-path: polygon(
+  /* clip-path: polygon(
            0 0,
            100% 0,
            0% 23%,
@@ -46,19 +48,19 @@ export const Logo = styled.div`
            100% 69%,
            0 92%
          ); this one is 4 triangles */
-         clip-path: polygon(
-           18% 18%,
-           0 93%,
-           17% 92%,
-           30% 30%,
-           67% 21%,
-           71% 75%,
-           20% 77%,
-           16% 93%,
-           90% 92%,
-           81% 1%
-         );
-         /* clip-path: polygon(
+  clip-path: polygon(
+    18% 18%,
+    0 93%,
+    17% 92%,
+    30% 30%,
+    67% 21%,
+    71% 75%,
+    20% 77%,
+    16% 93%,
+    90% 92%,
+    81% 1%
+  );
+  /* clip-path: polygon(
            11% 11%,
            63% 50%,
            55% 11%,
@@ -66,39 +68,37 @@ export const Logo = styled.div`
            10% 55%,
            50% 63%
          ); arrow */
-         /* clip-path: polygon(13% 9%, 39% 18%, 43% 0, 100% 100%, 0 35%, 22% 34%);  umbrella */
-         height: 30px;
-         color: inherit;
-         background-color: ${({ color }) => color && `${color}`};
-         width: 30px;
-       `;
+  /* clip-path: polygon(13% 9%, 39% 18%, 43% 0, 100% 100%, 0 35%, 22% 34%);  umbrella */
+  height: 30px;
+  color: inherit;
+  background-color: ${({ color }) => color && `${color}`};
+  width: 30px;
+`;
 
 export const LinkWrapper = styled.div`
-    display: flex; 
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 `;
 
 export const NavButton = styled.button`
-         border: none;
-         color: inherit;
-         background: none;
-         padding: 0;
-         padding: 0 10px;
-         font-size: 18px;
-         transition: all 1s ease-in;
-         text-decoration: none;
-         margin: 0 20px;
-         font-weight: 500;
+  border: none;
+  color: inherit;
+  background: none;
+  padding: 0 10px;
+  font-size: 18px;
+  transition: all 1s ease-in;
+  text-decoration: none;
+  margin: 0 20px;
+  text-transform: uppercase;
 
-         &:hover {
-           text-decoration: underline;
-         }
-         &:focus {
-           outline: none;
-         }
-       `;
+  &:hover {
+    text-decoration: underline;
+  }
+  &:focus {
+    outline: none;
+  }
+`;
 
 export const ColorModeWrapper = styled.div`
-    display: flex;
-    
-`
+  display: flex;
+`;
