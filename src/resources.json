@@ -1,0 +1,11 @@
+{
+    "en": {
+        "homepageTitle": "My name is Abai. I am a Front-end developer based in London."
+    },
+    "de": {
+        "homepageTitle": "Ich heiße Abai. Ich bin ein Frontend Developer, der in London lebt",
+        "subTitle": "Ich bin ein feuriger Developer ",
+        "aims": "Mein Ziel ist, von den Produkten, die ich schaffen, finanziell unabhängig zu werden." 
+    }
+
+}

@@ -1,17 +1,15 @@
 import styled from "styled-components";
 
 export const HeaderWrapper = styled.header`
-  display: flex;
-  justify-content: space-between;
-  flex-grow: 1;
-  padding: 30px;
-  color: #82a7a6;
-  flex-wrap: wrap;
-`;
+         display: flex;
+         justify-content: flex-end;
+         flex-grow: 1;
+         padding: 30px;
+         border-bottom: 2px solid #101419;
+       `;
 
 export const TitleWrapper = styled.div`
   display: flex;
-  flex-direction: space-between;
   align-self: center;
 `;
 
@@ -86,13 +84,13 @@ export const NavButton = styled.button`
   background: none;
   padding: 0 10px;
   font-size: 18px;
-  transition: all 1s ease-in;
+  transition: opacity 0.2s linear;
   text-decoration: none;
   margin: 0 20px;
-  text-transform: uppercase;
+  opacity: 0.5;
 
   &:hover {
-    text-decoration: underline;
+    opacity: 1;
   }
   &:focus {
     outline: none;

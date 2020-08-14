@@ -6,59 +6,56 @@ import {
   Title,
   TitleWrapper,
   Subtitle,
-  SubtitleSpan,
   SubtitleWrapper,
-  SocialMediaLinks,
+  ContactWrapper,
 } from "./Homepage.components";
-import PhotoGrid from "../PhotoGrid/PhotoGrid";
 
 const Homepage = () => {
   return (
-    <Container fluid>
+    <Container fluid style={{ height: "100vh" }}>
       <Row>
         <Navbar />
       </Row>
       <Row>
-        <Col xs={{ span: 4, offset: 4 }}>
+        <Col xs={12} xl={8} l={6}>
           <TitleWrapper>
             <Title>
-              I am a<br />
-              <span>Front-end developer</span>
-              <br />
-              based in London.
+              My name is Abai. I am a Front-end developer based in London.
             </Title>
-            {/* <SocialMediaLinks>
-              <span>Github</span>
-              <span>|</span>
-              <span>Twitter</span>
-              <span>|</span>
-              <span>Github</span>
-            </SocialMediaLinks> */}
           </TitleWrapper>
         </Col>
       </Row>
-
-      <Row className="justify-content-center">
-        <Col xs={3}>
+      <Row>
+        <Col>
           <SubtitleWrapper>
             <Subtitle>
-              Currently working for{" "}
-              <SubtitleSpan>
-                <a
-                  href="https://equalsmoney.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Equals
-                </a>
-              </SubtitleSpan>
+              I am a hard working, fast learning, passionate developer with
+              experience in the FinTech sector.
+              <br />
+              My goal is to become <span>financially independent</span> from the
+              products I create.
+              <br />
+              This website will be an ongoing project to showcase my ideas and
+              interests.
             </Subtitle>
           </SubtitleWrapper>
         </Col>
       </Row>
-      {/* <Row className={"position-relative"}>
-          <PhotoGrid />
-        </Row> */}
+      <Row>
+        <Col>
+          <ContactWrapper>
+            <span>
+              <strong>Contact:</strong>
+            </span>
+            <span>Abaiedmund@gmail.com</span>
+            <span>
+              <a href="https://www.linkedin.com/in/abai-edmund-06b711141">
+                Linkedin
+              </a>
+            </span>
+          </ContactWrapper>
+        </Col>
+      </Row>
     </Container>
   );
 };

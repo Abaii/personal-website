@@ -11,13 +11,10 @@ import {
 import ColourSwitch from "../ColourSwitch/ColourSwitch";
 
 const Navbar = () => {
-  const sections = ["Home", "About", "Projects"];
+  const sections = ["Home", "Projects"];
   return (
     <HeaderWrapper>
-      <TitleWrapper>
-        <Title>Abai Edmund</Title>
-        <Logo color="green" />
-      </TitleWrapper>
+      
       <LinkWrapper>
         {sections.map((section) => (
           <NavButton>{section}</NavButton>
