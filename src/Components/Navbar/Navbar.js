@@ -14,14 +14,12 @@ const Navbar = () => {
   const sections = ["Home", "Projects"];
   return (
     <HeaderWrapper>
-      
+      <Logo>AE</Logo>
+      <span>Abai Edmund</span>
       <LinkWrapper>
         {sections.map((section) => (
           <NavButton>{section}</NavButton>
         ))}
-        <ColorModeWrapper>
-          <ColourSwitch />
-        </ColorModeWrapper>
       </LinkWrapper>
     </HeaderWrapper>
   );

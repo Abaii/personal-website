@@ -1,68 +1,53 @@
 import styled from "styled-components";
 
-export const TitleWrapper = styled.section`
-  display: flex;
-  padding-top: 50px;
-  margin-left: 50px;
-`;
-export const Title = styled.h2`
-  font-size: 56px;
-  letter-spacing: 2px;
-  line-height: 1.2;
-  font-weight: 200;
-  
-  span {
-    font-weight: bold;
-  }
-`;
-
-export const Capital = styled.span`
-  font-size: 10vw;
-`
-
-export const SubtitleWrapper = styled.div`
-    display: flex;
-    margin: 50px;
-
-`;
-export const Subtitle = styled.p`
-  font-size: 24px;
-  font-weight: 200;
-  line-height: 1.6;
-  span {
-      font-weight: bold;
-  }
-`;
-
-export const ContactWrapper = styled.div`
-         display: flex;
-         flex-direction: column;
-
-         margin-left: 50px;
-         span:first-child {
-           font-weight: 900;
-         }
-         span {
-           font-size: 24px;
-           font-weight: 300;
-           margin-top: 20px;
-         }
-
-         span a {
-             color: inherit;
-             text-decoration: underline;
-             cursor: pointer;
-         }
-       `;
-
-
-export const SocialMediaLinks = styled.div`
+export const HomepageWrapper = styled.section`
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  padding-left: 100px;
+  justify-content: flex-end;
+  padding-left: 15px;
+  flex: 9999;
+  @media (max-width: 768px) {
+    justify-content: center;
+  }
+`;
+
+export const Intro = styled.h1`
+  font-size: 5vw;
+  line-height: 1;
+  letter-spacing: 4px;
+`;
+
+export const Subtitle = styled.span`
+  font-size: 2vw;
+  font-weight: bold;
+  margin-right: 25%;
+  opacity: 0.7;
+`
+
+export const ButtonWrapper = styled.div`
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 50px;
+  button {
+    margin-left: 20px;
+  }
+`;
+
+export const TextWrapper = styled.div`
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
   span {
-    writing-mode: vertical-rl;
-    color: #ff0;
+    opacity: 0.8;
+    font-size: 4vw;
+    margin-top: 20px;
+  }
+  @media (min-width: 768px) {
+    max-width: 50%;
+    padding-left: 15px;
+    span {
+      font-size: 1.5vw;
+    }
   }
 `;

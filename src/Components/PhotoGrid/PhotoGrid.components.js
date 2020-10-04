@@ -3,20 +3,20 @@ import Logo from '../../photos/rocks.JPG'
 import seaside from '../../photos/seasideHome.JPG'
 
 const sharedStyles = css`
-  height: 600px;
-  width: 600px;
-  background-size: 600px;
-  background-repeat: no-repeat;
-  position: absolute;
-  z-index: -1;
+  height: 25%;
+  width: 25%;
+  background-size: cover;
+  background-position: center;
   transition: all 1s ease-in;
-  opacity: 0.8;
-  &:hover{
-      opacity: 1;
+  opacity: 1;
+  &:hover {
+    opacity: 0.8;
   }
 `;
+
+
 export const PhotoWrapper = styled.div`
-    background: url(${Logo});
+    background: url(${({ imageUrl }) => imageUrl});
     ${sharedStyles}
     top: 0;
     left: 100px;
